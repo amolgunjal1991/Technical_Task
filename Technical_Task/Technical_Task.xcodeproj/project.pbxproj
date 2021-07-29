@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,18 @@
 		3C9257C426B08153006A6D0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C9257C326B08153006A6D0C /* Assets.xcassets */; };
 		3C9257C726B08153006A6D0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9257C526B08153006A6D0C /* LaunchScreen.storyboard */; };
 		3C9257D526B08309006A6D0C /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C9257D426B08309006A6D0C /* car_list.json */; };
+		3C92581B26B13018006A6D0C /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92581A26B13018006A6D0C /* CarModel.swift */; };
+		3C92581E26B13068006A6D0C /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92581D26B13068006A6D0C /* CarViewModel.swift */; };
+		3C92582126B13FDD006A6D0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92582026B13FDD006A6D0C /* Constants.swift */; };
+		3C92582726B14C21006A6D0C /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92582526B14C21006A6D0C /* CarsTableViewCell.swift */; };
+		3C92582826B14C21006A6D0C /* CarsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C92582626B14C21006A6D0C /* CarsTableViewCell.xib */; };
+		3C92582D26B15503006A6D0C /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92582C26B15503006A6D0C /* AppColors.swift */; };
+		E40E7705F9112CE04ADFF688 /* Pods_Technical_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935BBA8B9D7B72A8EC2085DE /* Pods_Technical_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02D0FF32734594D6EDB97BB1 /* Pods-Technical_Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Technical_Task.release.xcconfig"; path = "Target Support Files/Pods-Technical_Task/Pods-Technical_Task.release.xcconfig"; sourceTree = "<group>"; };
+		1C9A6DFCD34F2903864E24E9 /* Pods-Technical_Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Technical_Task.debug.xcconfig"; path = "Target Support Files/Pods-Technical_Task/Pods-Technical_Task.debug.xcconfig"; sourceTree = "<group>"; };
 		3C9257B426B0814F006A6D0C /* Technical_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Technical_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9257B726B0814F006A6D0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C9257BB26B0814F006A6D0C /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +35,13 @@
 		3C9257C626B08153006A6D0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C9257C826B08153006A6D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C9257D426B08309006A6D0C /* car_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		3C92581A26B13018006A6D0C /* CarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		3C92581D26B13068006A6D0C /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
+		3C92582026B13FDD006A6D0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3C92582526B14C21006A6D0C /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
+		3C92582626B14C21006A6D0C /* CarsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsTableViewCell.xib; sourceTree = "<group>"; };
+		3C92582C26B15503006A6D0C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		935BBA8B9D7B72A8EC2085DE /* Pods_Technical_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Technical_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E40E7705F9112CE04ADFF688 /* Pods_Technical_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				3C9257B626B0814F006A6D0C /* Technical_Task */,
 				3C9257B526B0814F006A6D0C /* Products */,
+				95D3786460B214A9EF495DB6 /* Pods */,
+				4B05D5E34421BD7D7F6F8A1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +77,12 @@
 		3C9257B626B0814F006A6D0C /* Technical_Task */ = {
 			isa = PBXGroup;
 			children = (
+				3C92581926B12E26006A6D0C /* Model */,
+				3C92581826B12E0F006A6D0C /* View */,
+				3C92581726B12BD5006A6D0C /* ViewModel */,
+				3C92582326B14BEC006A6D0C /* Custom Cells */,
 				3C9257D326B08309006A6D0C /* Helper */,
 				3C9257B726B0814F006A6D0C /* AppDelegate.swift */,
-				3C9257BB26B0814F006A6D0C /* CarListViewController.swift */,
 				3C9257BD26B0814F006A6D0C /* Main.storyboard */,
 				3C9257C326B08153006A6D0C /* Assets.xcassets */,
 				3C9257C526B08153006A6D0C /* LaunchScreen.storyboard */,
@@ -74,8 +96,68 @@
 			isa = PBXGroup;
 			children = (
 				3C9257D426B08309006A6D0C /* car_list.json */,
+				3C92582026B13FDD006A6D0C /* Constants.swift */,
+				3C92582C26B15503006A6D0C /* AppColors.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		3C92581726B12BD5006A6D0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3C92581D26B13068006A6D0C /* CarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3C92581826B12E0F006A6D0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C9257BB26B0814F006A6D0C /* CarListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3C92581926B12E26006A6D0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3C92581A26B13018006A6D0C /* CarModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3C92582326B14BEC006A6D0C /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3C92582426B14C00006A6D0C /* CarsTableCell */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		3C92582426B14C00006A6D0C /* CarsTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				3C92582526B14C21006A6D0C /* CarsTableViewCell.swift */,
+				3C92582626B14C21006A6D0C /* CarsTableViewCell.xib */,
+			);
+			path = CarsTableCell;
+			sourceTree = "<group>";
+		};
+		4B05D5E34421BD7D7F6F8A1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				935BBA8B9D7B72A8EC2085DE /* Pods_Technical_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95D3786460B214A9EF495DB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C9A6DFCD34F2903864E24E9 /* Pods-Technical_Task.debug.xcconfig */,
+				02D0FF32734594D6EDB97BB1 /* Pods-Technical_Task.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +167,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3C9257CB26B08153006A6D0C /* Build configuration list for PBXNativeTarget "Technical_Task" */;
 			buildPhases = (
+				FAE942A3A5EB62F3A6DCF7F1 /* [CP] Check Pods Manifest.lock */,
 				3C9257B026B0814F006A6D0C /* Sources */,
 				3C9257B126B0814F006A6D0C /* Frameworks */,
 				3C9257B226B0814F006A6D0C /* Resources */,
+				B746BABBC17635149C0D78C3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,19 +223,67 @@
 				3C9257C426B08153006A6D0C /* Assets.xcassets in Resources */,
 				3C9257D526B08309006A6D0C /* car_list.json in Resources */,
 				3C9257BF26B0814F006A6D0C /* Main.storyboard in Resources */,
+				3C92582826B14C21006A6D0C /* CarsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B746BABBC17635149C0D78C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Technical_Task/Pods-Technical_Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Technical_Task/Pods-Technical_Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Technical_Task/Pods-Technical_Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAE942A3A5EB62F3A6DCF7F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Technical_Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3C9257B026B0814F006A6D0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C92582726B14C21006A6D0C /* CarsTableViewCell.swift in Sources */,
+				3C92581B26B13018006A6D0C /* CarModel.swift in Sources */,
 				3C9257C226B0814F006A6D0C /* Technical_Task.xcdatamodeld in Sources */,
+				3C92581E26B13068006A6D0C /* CarViewModel.swift in Sources */,
 				3C9257BC26B0814F006A6D0C /* CarListViewController.swift in Sources */,
+				3C92582D26B15503006A6D0C /* AppColors.swift in Sources */,
 				3C9257B826B0814F006A6D0C /* AppDelegate.swift in Sources */,
+				3C92582126B13FDD006A6D0C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +427,13 @@
 		};
 		3C9257CC26B08153006A6D0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9A6DFCD34F2903864E24E9 /* Pods-Technical_Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Technical_Task/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,17 +441,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "techmahindra.com.Technical-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3C9257CD26B08153006A6D0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02D0FF32734594D6EDB97BB1 /* Pods-Technical_Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Technical_Task/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "techmahindra.com.Technical-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

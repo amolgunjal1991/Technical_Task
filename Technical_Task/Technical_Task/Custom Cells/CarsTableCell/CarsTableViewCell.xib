@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarsTableViewCell" rowHeight="129" id="KGk-i7-Jjw" customClass="CarsTableViewCell" customModule="Technical_Task" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iaB-gv-yJt">
+                        <rect key="frame" x="10" y="0.0" width="325" height="129"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lth-tR-sum">
+                                <rect key="frame" x="15" y="10" width="151.5" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="Qj7-0A-omt"/>
+                                    <constraint firstAttribute="width" secondItem="lth-tR-sum" secondAttribute="height" multiplier="1.5:1" id="dgA-oA-Jjo"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="VPU-VN-csA">
+                                <rect key="frame" x="181.5" y="10" width="123.5" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgu-rW-fkd">
+                                        <rect key="frame" x="0.0" y="0.0" width="123.5" height="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPN-WK-lIS">
+                                        <rect key="frame" x="0.0" y="35" width="123.5" height="26"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUU-tw-oW3" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="181.5" y="81" width="123.5" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="NjO-sp-KWn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="qUU-tw-oW3" secondAttribute="bottom" constant="18" id="5xx-IS-VmY"/>
+                            <constraint firstItem="VPU-VN-csA" firstAttribute="top" secondItem="lth-tR-sum" secondAttribute="top" id="6a4-y5-f2m"/>
+                            <constraint firstItem="qUU-tw-oW3" firstAttribute="bottom" secondItem="lth-tR-sum" secondAttribute="bottom" id="HzE-mY-mw5"/>
+                            <constraint firstItem="VPU-VN-csA" firstAttribute="leading" secondItem="lth-tR-sum" secondAttribute="trailing" constant="15" id="K8s-jZ-WeQ"/>
+                            <constraint firstItem="lth-tR-sum" firstAttribute="leading" secondItem="iaB-gv-yJt" secondAttribute="leading" constant="15" id="U7c-AV-0Bu"/>
+                            <constraint firstItem="VPU-VN-csA" firstAttribute="top" secondItem="iaB-gv-yJt" secondAttribute="top" constant="10" id="Xvq-VN-Z1g"/>
+                            <constraint firstAttribute="trailing" secondItem="VPU-VN-csA" secondAttribute="trailing" constant="20" id="ZH4-rS-jJe"/>
+                            <constraint firstAttribute="trailing" secondItem="qUU-tw-oW3" secondAttribute="trailing" constant="20" id="cGV-CF-jNT"/>
+                            <constraint firstItem="qUU-tw-oW3" firstAttribute="leading" secondItem="VPU-VN-csA" secondAttribute="leading" id="mwc-kE-jGt"/>
+                            <constraint firstItem="qUU-tw-oW3" firstAttribute="top" secondItem="VPU-VN-csA" secondAttribute="bottom" constant="10" id="wJY-SP-aZw"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7CP-od-fvV">
+                        <rect key="frame" x="30" y="115" width="285" height="4"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.37647058823529411" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="A0f-iT-3cA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iaB-gv-yJt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="I7D-n3-wDt"/>
+                    <constraint firstAttribute="trailing" secondItem="7CP-od-fvV" secondAttribute="trailing" constant="30" id="S9Y-CZ-gnw"/>
+                    <constraint firstItem="7CP-od-fvV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Wpl-cZ-qy2"/>
+                    <constraint firstAttribute="bottom" secondItem="7CP-od-fvV" secondAttribute="bottom" id="Ygv-F8-vjC"/>
+                    <constraint firstAttribute="trailing" secondItem="iaB-gv-yJt" secondAttribute="trailing" constant="10" id="aKf-YR-oRJ"/>
+                    <constraint firstAttribute="bottom" secondItem="iaB-gv-yJt" secondAttribute="bottom" constant="19" id="aeU-6y-M0G"/>
+                    <constraint firstItem="iaB-gv-yJt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="lHS-qJ-TmK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="brandNamelabel" destination="cgu-rW-fkd" id="eb6-ws-6QN"/>
+                <outlet property="carImageView" destination="lth-tR-sum" id="s00-0y-hUD"/>
+                <outlet property="mainView" destination="iaB-gv-yJt" id="3vq-lm-M6h"/>
+                <outlet property="priceLabel" destination="hPN-WK-lIS" id="TjA-Er-zu4"/>
+                <outlet property="ratingView" destination="qUU-tw-oW3" id="ZXa-9V-chP"/>
+            </connections>
+            <point key="canvasLocation" x="50.000000000000007" y="-28.459821428571427"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="qUU-tw-oW3">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+</document>
