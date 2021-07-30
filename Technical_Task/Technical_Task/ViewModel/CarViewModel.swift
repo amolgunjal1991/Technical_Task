@@ -24,17 +24,6 @@ class CarViewModel {
     
 //MARK: Fetch car details json from local file
     func getCarDetails(){
-        let urlForResource = Bundle.main.path(forResource: "car_list", ofType: "json")
-        guard let path = urlForResource else {
-            return
-        }
-        do {
-            let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-            let decoder = JSONDecoder()
-            let carData = try decoder.decode(CarModel.self, from: data)
-            self.delegate?.getCarDetails(carsData: carData)
-        }catch {
-            fatalError(Constants.FETCH_ERROR_MESSAGE)
-        }
+        self.delegate?.getCarDetails(carsData: Services.getCarDetails())
     }
 }

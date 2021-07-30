@@ -20,6 +20,10 @@
 		3C92582726B14C21006A6D0C /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92582526B14C21006A6D0C /* CarsTableViewCell.swift */; };
 		3C92582826B14C21006A6D0C /* CarsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C92582626B14C21006A6D0C /* CarsTableViewCell.xib */; };
 		3C92582D26B15503006A6D0C /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92582C26B15503006A6D0C /* AppColors.swift */; };
+		3C92584326B31CD3006A6D0C /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92584226B31CD2006A6D0C /* StringExtensions.swift */; };
+		3C92584826B34E5C006A6D0C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92584726B34E5C006A6D0C /* BaseViewController.swift */; };
+		3C92584D26B34F23006A6D0C /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92584C26B34F23006A6D0C /* Services.swift */; };
+		3C92585526B3E1C1006A6D0C /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92585426B3E1BE006A6D0C /* UtilityManager.swift */; };
 		E40E7705F9112CE04ADFF688 /* Pods_Technical_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935BBA8B9D7B72A8EC2085DE /* Pods_Technical_Task.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,10 @@
 		3C92582526B14C21006A6D0C /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
 		3C92582626B14C21006A6D0C /* CarsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsTableViewCell.xib; sourceTree = "<group>"; };
 		3C92582C26B15503006A6D0C /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		3C92584226B31CD2006A6D0C /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		3C92584726B34E5C006A6D0C /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3C92584C26B34F23006A6D0C /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		3C92585426B3E1BE006A6D0C /* UtilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
 		935BBA8B9D7B72A8EC2085DE /* Pods_Technical_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Technical_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,11 +85,14 @@
 		3C9257B626B0814F006A6D0C /* Technical_Task */ = {
 			isa = PBXGroup;
 			children = (
+				3C92584B26B34F0E006A6D0C /* Services */,
+				3C92584126B31CB3006A6D0C /* Extensions */,
+				3C92583F26B2C5B5006A6D0C /* Utility */,
 				3C92581926B12E26006A6D0C /* Model */,
 				3C92581826B12E0F006A6D0C /* View */,
 				3C92581726B12BD5006A6D0C /* ViewModel */,
 				3C92582326B14BEC006A6D0C /* Custom Cells */,
-				3C9257D326B08309006A6D0C /* Helper */,
+				3C9257D326B08309006A6D0C /* Resources */,
 				3C9257B726B0814F006A6D0C /* AppDelegate.swift */,
 				3C9257BD26B0814F006A6D0C /* Main.storyboard */,
 				3C9257C326B08153006A6D0C /* Assets.xcassets */,
@@ -92,14 +103,12 @@
 			path = Technical_Task;
 			sourceTree = "<group>";
 		};
-		3C9257D326B08309006A6D0C /* Helper */ = {
+		3C9257D326B08309006A6D0C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				3C9257D426B08309006A6D0C /* car_list.json */,
-				3C92582026B13FDD006A6D0C /* Constants.swift */,
-				3C92582C26B15503006A6D0C /* AppColors.swift */,
 			);
-			path = Helper;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		3C92581726B12BD5006A6D0C /* ViewModel */ = {
@@ -114,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				3C9257BB26B0814F006A6D0C /* CarListViewController.swift */,
+				3C92584726B34E5C006A6D0C /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +151,32 @@
 				3C92582626B14C21006A6D0C /* CarsTableViewCell.xib */,
 			);
 			path = CarsTableCell;
+			sourceTree = "<group>";
+		};
+		3C92583F26B2C5B5006A6D0C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3C92582026B13FDD006A6D0C /* Constants.swift */,
+				3C92582C26B15503006A6D0C /* AppColors.swift */,
+				3C92585426B3E1BE006A6D0C /* UtilityManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3C92584126B31CB3006A6D0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C92584226B31CD2006A6D0C /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C92584B26B34F0E006A6D0C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3C92584C26B34F23006A6D0C /* Services.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		4B05D5E34421BD7D7F6F8A1F /* Frameworks */ = {
@@ -276,13 +312,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C92584326B31CD3006A6D0C /* StringExtensions.swift in Sources */,
+				3C92584826B34E5C006A6D0C /* BaseViewController.swift in Sources */,
 				3C92582726B14C21006A6D0C /* CarsTableViewCell.swift in Sources */,
+				3C92584D26B34F23006A6D0C /* Services.swift in Sources */,
 				3C92581B26B13018006A6D0C /* CarModel.swift in Sources */,
 				3C9257C226B0814F006A6D0C /* Technical_Task.xcdatamodeld in Sources */,
 				3C92581E26B13068006A6D0C /* CarViewModel.swift in Sources */,
 				3C9257BC26B0814F006A6D0C /* CarListViewController.swift in Sources */,
 				3C92582D26B15503006A6D0C /* AppColors.swift in Sources */,
 				3C9257B826B0814F006A6D0C /* AppDelegate.swift in Sources */,
+				3C92585526B3E1C1006A6D0C /* UtilityManager.swift in Sources */,
 				3C92582126B13FDD006A6D0C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

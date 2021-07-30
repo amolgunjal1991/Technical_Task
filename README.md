@@ -10,3 +10,8 @@ Required tools
 Level -1 :
 - Extracted the simple list from joined json file and displayed collapsed list(car image,name,price and rating)
 
+
+Level -2 :
+- Added expand & collapse functionality on list, by default first item is expanded(shows pros and cons sections with bullet points). On click other item it will get expand with details & first will collapse.
+- Can add unlimited number of bullet points as per the json
+
