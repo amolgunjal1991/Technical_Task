@@ -26,6 +26,13 @@ class CarListViewController: BaseViewController{
     var carsModelArray = [String]()
     var expandCollapseStatusArray : [Bool] = []
     
+    enum FilterByType {
+        case make
+        case model
+        case none
+    }
+    
+    var filterType : FilterByType = .none
 //MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +40,6 @@ class CarListViewController: BaseViewController{
     }
     
     func initialize(){
-        
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.view.backgroundColor = .clear
-        
         setupNavigationBar(title: Constants.TITLE_TEXT, textColor: .white)
         setupFilterLabel()
         anyMakeTextfield.placeholder = Constants.ANY_MAKE_FILTER
@@ -55,62 +57,76 @@ class CarListViewController: BaseViewController{
     
     
     func setupMakeModelDataSource(){
-        self.carsMakeArray = self.totalCarsDataArray.map({$0.make!})
-        self.carsModelArray = self.totalCarsDataArray.map({$0.model!})
+        self.carsMakeArray = viewModel!.getMakeTypeArray()
+        self.carsModelArray = viewModel!.getModelTypeArray()
     }
     
     func addAlertWithMultipleActions(alertTitle: String, actionTitles: [String]) {
-        let alert = UIAlertController(title: "\(Constants.FILTER_BY_INITIAL_STR) \(alertTitle)", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "\(Constants.FILTER_BY_INITIAL_STR) \(alertTitle)", message: .empty, preferredStyle: .alert)
         alert.view.tintColor = .black
         for actionTitle in actionTitles {
             let action = UIAlertAction(title: actionTitle, style: .default) { (action) in
                 self.filterWithTheString(filterString: actionTitle, byType: alertTitle)
+            
                 alert.dismiss(animated: true, completion: nil)
             }
             alert.addAction(action)
         }
         let cancelActon = UIAlertAction(title: Constants.CANCEL_STRING, style: .destructive) { (action) in
-            self.filterWithTheString(filterString: "", byType: "")
+            switch self.filterType {
+            case .make:
+                self.filterWithTheString(filterString: .empty, byType: .empty)
+                break
+            case .model:
+                if let maketfText = self.anyMakeTextfield.text {
+                    self.filterWithTheString(filterString: maketfText, byType: Constants.MAKE)
+                }
+                break
+            default :
+                self.filterWithTheString(filterString: .empty, byType: .empty)
+                break
+            }
             alert.dismiss(animated: true, completion: nil)
         }
         alert.addAction(cancelActon)
         self.present(alert, animated: true, completion: nil)
     }
     
-    
     func filterWithTheString(filterString: String, byType: String){
-        switch byType {
-        case "make":
-            carsDataArray = totalCarsDataArray.filter({$0.make == filterString})
-            anyMakeTextfield.text = filterString
-            carsModelArray = carsDataArray.map({$0.model!})
-            anyModelTextField.text = ""
-            break
-        case "model":
-            carsDataArray = totalCarsDataArray.filter({$0.model == filterString})
-            anyModelTextField.text = filterString
-            break
-        default:
-            anyModelTextField.text = ""
-            anyMakeTextfield.text = ""
-            carsDataArray = totalCarsDataArray
-            break
+        guard let responseOfFilter = viewModel?.filterWithTheString(filterString: filterString, byType: byType) else{
+            return
         }
+        
+        switch byType {
+        case Constants.MAKE:
+            anyMakeTextfield.text = responseOfFilter.makeTf
+            anyModelTextField.text = .empty
+        case Constants.MODEL :
+            anyModelTextField.text = responseOfFilter.madelTf
+        default:
+            anyModelTextField.text = .empty
+            anyMakeTextfield.text = .empty
+        }
+        carsDataArray = responseOfFilter.carDataModel
+        carsModelArray = responseOfFilter.makeArray
         setupInitialStatusExpandAndCollapseCells(countOfCell: carsDataArray.count)
         DispatchQueue.main.async {
             self.carsTableView.reloadData()
         }
     }
     
+    
     @IBAction func filterByMakeButtonTapped(_ sender: UIButton) {
-        addAlertWithMultipleActions(alertTitle: "make", actionTitles: carsMakeArray)
+        filterType = .make
+        addAlertWithMultipleActions(alertTitle: Constants.MAKE, actionTitles: carsMakeArray)
         
     }
     @IBAction func filterByModelButtonTapped(_ sender: UIButton) {
-        if self.anyMakeTextfield.text == "" {
-            self.showToast(message: Constants.TOAST_MESSAGE_STRING, duration: 3.0)
-        }else{
-            addAlertWithMultipleActions(alertTitle: "model", actionTitles: carsModelArray)
+        filterType = .model
+        if self.anyMakeTextfield.text == .empty {
+            self.showToast(message: Constants.TOAST_MESSAGE_STRING, duration: ToastConfigue.duration)
+        } else {
+            addAlertWithMultipleActions(alertTitle: Constants.MODEL, actionTitles: carsModelArray)
         }
     }
     
@@ -133,6 +149,7 @@ class CarListViewController: BaseViewController{
                 }
             }
         }
+        self.carsTableView.reloadData()
     }
     
 //MARK: Populate data for the cell

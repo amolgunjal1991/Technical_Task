@@ -23,6 +23,10 @@ extension String {
 
         return label.frame.height
      }
+    
+    static var empty : String  { 
+        return ""
+    }
 
 }
 

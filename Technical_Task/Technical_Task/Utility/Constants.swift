@@ -25,6 +25,9 @@ class Constants {
     static let TOAST_MESSAGE_STRING = "Please select the make first"
     static let CANCEL_STRING = "Cancel"
     static let FILTER_BY_INITIAL_STR = "Filter by"
+    static let MAKE = "make"
+    static let MODEL = "model"
+    
 }
 
 class TableCellConstants {
@@ -34,4 +37,8 @@ class TableCellConstants {
 class FontConstants {
     static let HELVETICA_BOLD = "Helvetica-Bold"
     static let HELVETICA_REGULAR = "Helvetica-Regular"
+}
+
+struct  ToastConfigue {
+    static let duration = 3.0
 }

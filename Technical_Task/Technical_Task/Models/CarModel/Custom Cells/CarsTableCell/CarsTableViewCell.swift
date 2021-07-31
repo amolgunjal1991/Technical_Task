@@ -60,7 +60,7 @@ class CarsTableViewCell: UITableViewCell {
     
 //MARK: Initial setup for cell component's with their values
     /**
-      - Parameters:
+        - Parameters:
         - carDetail:This will contain the complete data for the car model and used to set the info on cell
         - status: Status of the expand & collapse the cell
      */
@@ -110,7 +110,7 @@ class CarsTableViewCell: UITableViewCell {
                 }
                 for index in 0..<prosCount{
                     let prosString = carDetail.prosList![index]
-                    if prosString != "" {
+                    if prosString != .empty {
                         let titleString = "\(Constants.BULLET_POINT_STRING)  \(prosString)"
                         let prosDescriptionLabel = UtilityManager.createLabelDynamically(textTitle: titleString, fontSize: 13, color: .black, width: self.frame.width - 70, heightOfStack: heightOfStackView)
                         heightOfStackView = prosDescriptionLabel.1
@@ -127,7 +127,7 @@ class CarsTableViewCell: UITableViewCell {
                 }
                 for index in 0..<consCount{
                     let prosString = carDetail.consList![index]
-                    if prosString != "" {
+                    if prosString != .empty {
                         let titleString = "\(Constants.BULLET_POINT_STRING)  \(carDetail.consList![index])"
                         
                         let consDescriptionLabel = UtilityManager.createLabelDynamically(textTitle: titleString, fontSize: 13, color: .black, width: self.frame.width - 70, heightOfStack: heightOfStackView)
@@ -145,7 +145,4 @@ class CarsTableViewCell: UITableViewCell {
             self.prosAndConsStackViewHeightConstraint.constant = 0
         }
     }
-    
-
-
 }
