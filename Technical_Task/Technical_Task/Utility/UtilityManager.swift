@@ -9,7 +9,14 @@ import UIKit
 
 
 class UtilityManager {
-    
+    //MARK: create dynamic UILabel with bullet point
+        /**
+          - Parameters:
+            - textTitle:Title for the Label
+            - fontSize: Font size for the UILabel
+            - color: Color  for the UILabel text
+            - heightOfStack : Height of stack view to maintain the cell height
+         */
     static func createLabelDynamically(textTitle: String, fontSize: CGFloat, color: UIColor, width : CGFloat, heightOfStack : Double) -> (UILabel,Double) {
         
         let labelHeight = textTitle.height(constraintedWidth: width - 100, font: UIFont(name: FontConstants.HELVETICA_BOLD, size: fontSize)!)
@@ -26,8 +33,7 @@ class UtilityManager {
         
         label.attributedText = attributtedText
         label.numberOfLines = 0
-        let finalLabelHeight = Double(labelHeight + 10)
-        return (label,finalLabelHeight)
+        return (label,heightOfStackView)
     }
     
 }
