@@ -8,26 +8,33 @@
 import UIKit
 
 extension String {
-    //MARK: Calculate height for the label as per contents
-        /**
-          - Parameters:
-            - width : Width of the label
-            - font : Font size for the label
-         */
-    func height(constraintedWidth width: CGFloat, font: UIFont) -> CGFloat {
-        let label =  UILabel(frame: CGRect(x: 0, y: 0, width: width - 2, height: .greatestFiniteMagnitude))
+    // MARK: Calculate height for the label as per contents
+    /**
+     - Parameters:
+     - width : Width of the label
+     - font : Font size for the label
+     */
+    func height(constraintedWidth width: CGFloat,
+                font: UIFont) -> CGFloat {
+        let label =  UILabel(frame: CGRect(x: 0,
+                                           y: 0,
+                                           width: width - 2,
+                                           height: .greatestFiniteMagnitude))
         label.numberOfLines = 0
         label.text = self
         label.font = font
         label.sizeToFit()
-
         return label.frame.height
-     }
-    
-    static var empty : String  { 
-        return ""
     }
-
+    
+    // MARK: Provide concatication of two string with self
+    /**
+     - Parameters:
+     - concatString : Make of the car
+     - returns : return the concatinated string
+     */
+    func concatinateTwoStrings(concatString: String) -> String {
+        return self + " " + concatString
+    }
 }
-
 

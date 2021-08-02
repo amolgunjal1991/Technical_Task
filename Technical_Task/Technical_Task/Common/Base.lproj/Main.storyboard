@@ -24,14 +24,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tacoma 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S4-Xk-OO9">
-                                        <rect key="frame" x="20" y="97" width="335" height="29"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                        <rect key="frame" x="20" y="88" width="335" height="37"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="32"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get your's now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efo-gq-S73">
-                                        <rect key="frame" x="20" y="127" width="335" height="20"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                        <rect key="frame" x="25" y="126" width="330" height="21"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -41,7 +41,7 @@
                                     <constraint firstAttribute="bottom" secondItem="Efo-gq-S73" secondAttribute="bottom" constant="20" id="DAP-HK-hTf"/>
                                     <constraint firstAttribute="trailing" secondItem="Zkn-w5-mqZ" secondAttribute="trailing" id="IZV-WQ-w0b"/>
                                     <constraint firstItem="Zkn-w5-mqZ" firstAttribute="leading" secondItem="Q1r-hD-URM" secondAttribute="leading" id="OiE-y6-AGl"/>
-                                    <constraint firstItem="Efo-gq-S73" firstAttribute="leading" secondItem="Q1r-hD-URM" secondAttribute="leading" constant="20" id="g4S-kc-qlA"/>
+                                    <constraint firstItem="Efo-gq-S73" firstAttribute="leading" secondItem="Q1r-hD-URM" secondAttribute="leading" constant="25" id="g4S-kc-qlA"/>
                                     <constraint firstItem="1S4-Xk-OO9" firstAttribute="leading" secondItem="Q1r-hD-URM" secondAttribute="leading" constant="20" id="mLY-PZ-4sb"/>
                                     <constraint firstAttribute="bottom" secondItem="Zkn-w5-mqZ" secondAttribute="bottom" id="mi6-lC-VGa"/>
                                     <constraint firstItem="Zkn-w5-mqZ" firstAttribute="top" secondItem="Q1r-hD-URM" secondAttribute="top" id="mnZ-Ag-EDg"/>
@@ -51,42 +51,42 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOf-sV-DdP" userLabel="View" customClass="CardView" customModule="Technical_Task" customModuleProvider="target">
-                                <rect key="frame" x="28" y="241" width="319" height="138"/>
+                                <rect key="frame" x="28" y="229" width="319" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5Q-EB-K2S">
                                         <rect key="frame" x="16" y="15" width="287" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="DhU-uH-oIx"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any make" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ik-jF-a4x">
-                                        <rect key="frame" x="16" y="43" width="287" height="30"/>
+                                        <rect key="frame" x="16" y="43" width="287" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="egD-HJ-zTZ"/>
+                                            <constraint firstAttribute="height" constant="31" id="egD-HJ-zTZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Plf-T5-zKh">
-                                        <rect key="frame" x="16" y="43" width="287" height="30"/>
+                                        <rect key="frame" x="16" y="43" width="287" height="31"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="filterByMakeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EDI-n8-FTH"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Any model" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6Q-3W-Idg">
-                                        <rect key="frame" x="16" y="88" width="287" height="30"/>
+                                        <rect key="frame" x="16" y="89" width="287" height="31"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="UKc-pv-DsJ"/>
+                                            <constraint firstAttribute="height" constant="31" id="UKc-pv-DsJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5H-bi-ANb">
-                                        <rect key="frame" x="16" y="88" width="287" height="30"/>
+                                        <rect key="frame" x="16" y="89" width="287" height="31"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <action selector="filterByModelButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rnp-VH-OX0"/>
@@ -121,7 +121,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TbF-Y7-Z5f">
-                                <rect key="frame" x="0.0" y="399" width="375" height="302"/>
+                                <rect key="frame" x="0.0" y="394" width="375" height="307"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
@@ -133,7 +133,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TbF-Y7-Z5f" firstAttribute="top" secondItem="qOf-sV-DdP" secondAttribute="bottom" constant="20" id="0Wd-93-9cE"/>
+                            <constraint firstItem="TbF-Y7-Z5f" firstAttribute="top" secondItem="qOf-sV-DdP" secondAttribute="bottom" constant="25" id="0Wd-93-9cE"/>
                             <constraint firstItem="TbF-Y7-Z5f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6D0-iN-BoY"/>
                             <constraint firstItem="Q1r-hD-URM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="E1L-pd-xfW"/>
                             <constraint firstItem="qOf-sV-DdP" firstAttribute="width" secondItem="Q1r-hD-URM" secondAttribute="width" multiplier="0.85" id="Fx2-mu-1C9"/>
@@ -143,7 +143,7 @@
                             <constraint firstItem="Q1r-hD-URM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pHM-k8-Ayr"/>
                             <constraint firstItem="Q1r-hD-URM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="rkf-ZQ-UFN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TbF-Y7-Z5f" secondAttribute="trailing" id="tmC-c5-Qo9"/>
-                            <constraint firstItem="qOf-sV-DdP" firstAttribute="top" secondItem="Q1r-hD-URM" secondAttribute="bottom" constant="30" id="ybT-Dv-EOJ"/>
+                            <constraint firstItem="qOf-sV-DdP" firstAttribute="top" secondItem="Q1r-hD-URM" secondAttribute="bottom" constant="18" id="ybT-Dv-EOJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fRQ-Dt-b9a"/>
@@ -181,7 +181,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Tacoma" width="5472" height="3648"/>
+        <image name="Tacoma" width="2736" height="1824"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

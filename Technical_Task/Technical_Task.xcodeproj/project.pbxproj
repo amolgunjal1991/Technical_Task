@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C66C34026B7DCEB001A3C6F /* CarFilterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66C33F26B7DCEB001A3C6F /* CarFilterStruct.swift */; };
 		3C9257B826B0814F006A6D0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9257B726B0814F006A6D0C /* AppDelegate.swift */; };
 		3C9257BC26B0814F006A6D0C /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9257BB26B0814F006A6D0C /* CarListViewController.swift */; };
 		3C9257BF26B0814F006A6D0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C9257BD26B0814F006A6D0C /* Main.storyboard */; };
@@ -26,12 +27,16 @@
 		3C92585526B3E1C1006A6D0C /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92585426B3E1BE006A6D0C /* UtilityManager.swift */; };
 		3C92585926B4142C006A6D0C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92585826B4142B006A6D0C /* CardView.swift */; };
 		3C92588D26B493F7006A6D0C /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92588C26B493F6006A6D0C /* ViewControllerExtension.swift */; };
+		3C92589A26B6E332006A6D0C /* IntegerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C92589926B6E332006A6D0C /* IntegerExtension.swift */; };
+		3C9258C826B6F565006A6D0C /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9258C726B6F565006A6D0C /* TextFieldExtension.swift */; };
+		3C9258CE26B72CE9006A6D0C /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9258CD26B72CE6006A6D0C /* UIFontExtension.swift */; };
 		E40E7705F9112CE04ADFF688 /* Pods_Technical_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 935BBA8B9D7B72A8EC2085DE /* Pods_Technical_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02D0FF32734594D6EDB97BB1 /* Pods-Technical_Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Technical_Task.release.xcconfig"; path = "Target Support Files/Pods-Technical_Task/Pods-Technical_Task.release.xcconfig"; sourceTree = "<group>"; };
 		1C9A6DFCD34F2903864E24E9 /* Pods-Technical_Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Technical_Task.debug.xcconfig"; path = "Target Support Files/Pods-Technical_Task/Pods-Technical_Task.debug.xcconfig"; sourceTree = "<group>"; };
+		3C66C33F26B7DCEB001A3C6F /* CarFilterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFilterStruct.swift; sourceTree = "<group>"; };
 		3C9257B426B0814F006A6D0C /* Technical_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Technical_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C9257B726B0814F006A6D0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C9257BB26B0814F006A6D0C /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +58,9 @@
 		3C92585426B3E1BE006A6D0C /* UtilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
 		3C92585826B4142B006A6D0C /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3C92588C26B493F6006A6D0C /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		3C92589926B6E332006A6D0C /* IntegerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerExtension.swift; sourceTree = "<group>"; };
+		3C9258C726B6F565006A6D0C /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		3C9258CD26B72CE6006A6D0C /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		935BBA8B9D7B72A8EC2085DE /* Pods_Technical_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Technical_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,12 +97,11 @@
 		3C9257B626B0814F006A6D0C /* Technical_Task */ = {
 			isa = PBXGroup;
 			children = (
-				3C92588F26B547A3006A6D0C /* Models */,
-				3C92585726B41363006A6D0C /* Helper */,
+				3C92588F26B547A3006A6D0C /* Module */,
+				3C92585726B41363006A6D0C /* Common */,
 				3C92584126B31CB3006A6D0C /* Extensions */,
 				3C92583F26B2C5B5006A6D0C /* Utility */,
 				3C9257B726B0814F006A6D0C /* AppDelegate.swift */,
-				3C9257BD26B0814F006A6D0C /* Main.storyboard */,
 				3C9257C326B08153006A6D0C /* Assets.xcassets */,
 				3C9257C526B08153006A6D0C /* LaunchScreen.storyboard */,
 				3C9257C826B08153006A6D0C /* Info.plist */,
@@ -122,8 +129,8 @@
 		3C92581826B12E0F006A6D0C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3C92582326B14BEC006A6D0C /* Custom Cells */,
 				3C9257BB26B0814F006A6D0C /* CarListViewController.swift */,
-				3C92584726B34E5C006A6D0C /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				3C92581A26B13018006A6D0C /* CarModel.swift */,
+				3C66C33F26B7DCEB001A3C6F /* CarFilterStruct.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -157,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				3C92582026B13FDD006A6D0C /* Constants.swift */,
-				3C92582C26B15503006A6D0C /* AppColors.swift */,
 				3C92585426B3E1BE006A6D0C /* UtilityManager.swift */,
 			);
 			path = Utility;
@@ -167,7 +174,11 @@
 			isa = PBXGroup;
 			children = (
 				3C92584226B31CD2006A6D0C /* StringExtensions.swift */,
+				3C92589926B6E332006A6D0C /* IntegerExtension.swift */,
 				3C92588C26B493F6006A6D0C /* ViewControllerExtension.swift */,
+				3C9258C726B6F565006A6D0C /* TextFieldExtension.swift */,
+				3C9258CD26B72CE6006A6D0C /* UIFontExtension.swift */,
+				3C92582C26B15503006A6D0C /* AppColors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -180,33 +191,34 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		3C92585726B41363006A6D0C /* Helper */ = {
+		3C92585726B41363006A6D0C /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				3C92585826B4142B006A6D0C /* CardView.swift */,
+				3C92584726B34E5C006A6D0C /* BaseViewController.swift */,
+				3C9257BD26B0814F006A6D0C /* Main.storyboard */,
 			);
-			path = Helper;
+			path = Common;
 			sourceTree = "<group>";
 		};
-		3C92588F26B547A3006A6D0C /* Models */ = {
+		3C92588F26B547A3006A6D0C /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				3C92589026B547B7006A6D0C /* CarModel */,
+				3C92589026B547B7006A6D0C /* CarModule */,
 			);
-			path = Models;
+			path = Module;
 			sourceTree = "<group>";
 		};
-		3C92589026B547B7006A6D0C /* CarModel */ = {
+		3C92589026B547B7006A6D0C /* CarModule */ = {
 			isa = PBXGroup;
 			children = (
 				3C92581926B12E26006A6D0C /* Model */,
 				3C92581826B12E0F006A6D0C /* View */,
 				3C92581726B12BD5006A6D0C /* ViewModel */,
-				3C92582326B14BEC006A6D0C /* Custom Cells */,
 				3C92584B26B34F0E006A6D0C /* Services */,
 				3C9257D326B08309006A6D0C /* Resources */,
 			);
-			path = CarModel;
+			path = CarModule;
 			sourceTree = "<group>";
 		};
 		4B05D5E34421BD7D7F6F8A1F /* Frameworks */ = {
@@ -344,16 +356,20 @@
 			files = (
 				3C92584326B31CD3006A6D0C /* StringExtensions.swift in Sources */,
 				3C92584826B34E5C006A6D0C /* BaseViewController.swift in Sources */,
+				3C9258CE26B72CE9006A6D0C /* UIFontExtension.swift in Sources */,
 				3C92588D26B493F7006A6D0C /* ViewControllerExtension.swift in Sources */,
+				3C66C34026B7DCEB001A3C6F /* CarFilterStruct.swift in Sources */,
 				3C92582726B14C21006A6D0C /* CarsTableViewCell.swift in Sources */,
 				3C92584D26B34F23006A6D0C /* Services.swift in Sources */,
 				3C92581B26B13018006A6D0C /* CarModel.swift in Sources */,
 				3C9257C226B0814F006A6D0C /* Technical_Task.xcdatamodeld in Sources */,
 				3C92581E26B13068006A6D0C /* CarViewModel.swift in Sources */,
 				3C92585926B4142C006A6D0C /* CardView.swift in Sources */,
+				3C9258C826B6F565006A6D0C /* TextFieldExtension.swift in Sources */,
 				3C9257BC26B0814F006A6D0C /* CarListViewController.swift in Sources */,
 				3C92582D26B15503006A6D0C /* AppColors.swift in Sources */,
 				3C9257B826B0814F006A6D0C /* AppDelegate.swift in Sources */,
+				3C92589A26B6E332006A6D0C /* IntegerExtension.swift in Sources */,
 				3C92585526B3E1C1006A6D0C /* UtilityManager.swift in Sources */,
 				3C92582126B13FDD006A6D0C /* Constants.swift in Sources */,
 			);

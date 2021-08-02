@@ -8,8 +8,9 @@
 import Foundation
 
 
-// MARK: - CarModelElement
-struct CarModelElement: Codable {
+// MARK: - CarModel
+struct CarModel: Codable {
+    
     let consList: [String]?
     let customerPrice: Int?
     let make: String?
@@ -18,7 +19,6 @@ struct CarModelElement: Codable {
     let prosList: [String]?
     let rating: Int?
     let image: String?
- 
 }
 
-typealias CarModel = [CarModelElement]
+typealias CarModels = [CarModel]

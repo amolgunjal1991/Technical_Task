@@ -7,38 +7,59 @@
 
 import Foundation
 
-class Constants {
-    //Error message cosntant
-    static let FETCH_ERROR_MESSAGE = "Unable to fetch data from json"
-    static let TITLE_TEXT = "GUIDOMIA"
-    static let LOCAL_JSON_FILE_NAME = "car_list"
-    static let FILE_EXTENSION_TYPE_JSON = "json"
-    static let CONS_STRING = "Cons:"
-    static let PROS_STRING = "Pros:"
-    static let BULLET_POINT_STRING = "•"
-    static let FILTER_TITLE_LABEL = "Filters"
-    static let ANY_MAKE_FILTER = "Any make"
-    static let ANY_MODEL_FILTER = "Any model"
-    static let CORNER_RADIUS = 5.0
-    static let MAIN_LABEL_TITLE = "Tacoma 2021"
-    static let MAIN_SUBLABEL_TITLE = "Get your's now"
-    static let TOAST_MESSAGE_STRING = "Please select the make first"
-    static let CANCEL_STRING = "Cancel"
-    static let FILTER_BY_INITIAL_STR = "Filter by"
-    static let MAKE = "make"
-    static let MODEL = "model"
+struct Constants {
+    // MARK:- Error message cosntant
+    static let fetchErrorMessage = "Unable to fetch data from json"
+    
+    // MARK:- Label title text constants strings
+    static let titleText = "GUIDOMIA"
+    static let consString = "Cons :"
+    static let prosString = "Pros :"
+    static let bulletPointString = " \u{2022}"
+    static let filterTitleLabel = "Filters"
+    static let anyMakeFilter = "Any make"
+    static let anyModelFilter = "Any model"
+    static let mainSubLabelTitle = "Get your's now"
+    static let toastMessageString = "Please select the make first"
+    static let cancelString = "Cancel"
+    static let filterByInitialTitle = "Filter by"
+    static let make = "make"
+    static let model = "model"
+    
+    // MARK:- Model Constants
+    static let localJsonFileName = "car_list"
+    static let fileExtensionTypeJson = "json"
+    static let mainLabelTitle = "Tacoma 2021"
+    
+    // MARK:- Empty String
+    static let emptyString = ""
+    
+    // MARK:- Corner radius constants
+    static let cornerRadius = 5.0
+    
     
 }
 
-class TableCellConstants {
+// Tableview cell cosntants
+struct TableCellConstants {
     static let carTableCell = "CarsTableViewCell"
 }
 
-class FontConstants {
-    static let HELVETICA_BOLD = "Helvetica-Bold"
-    static let HELVETICA_REGULAR = "Helvetica-Regular"
+// Font name cosntants
+struct FontConstants {
+    static let helveticaBold = "Helvetica-Bold"
+    static let HelveticaRegular = "Helvetica-Regular"
 }
 
-struct  ToastConfigue {
+// Toast duration constant
+struct ToastConfigue {
     static let duration = 3.0
+}
+
+
+// Filter by type enum's
+enum FilterByType {
+    case make
+    case model
+    case none
 }
