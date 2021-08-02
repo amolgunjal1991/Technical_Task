@@ -35,12 +35,12 @@ class CarViewModel {
     // Function gives the make list of the car
     func getMakeTypeArray() -> [String] {
         return self.totalCarArray.map({$0.make ?? ""})
-
-        
-        // Function gives the model list of the car
-        func getModelTypeArray() -> [String] {
-            return self.totalCarArray.map({$0.model ?? ""})
-        }    }
+    }
+    
+    // Function gives the model list of the car
+    func getModelTypeArray() -> [String] {
+        return self.totalCarArray.map({$0.model ?? ""})
+    }
     
     // Function gives the model list of the car
     func getMakeTypeStringsArray() -> [String] {
